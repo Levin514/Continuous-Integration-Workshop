@@ -1,0 +1,16 @@
+[MAIN]
+load-plugins=
+
+[FORMAT]
+max-line-length=100
+
+[MESSAGES CONTROL]
+disable=
+    C0114,
+    C0115,
+    C0116,
+    R0903,
+    W0107
+
+[DESIGN]
+max-args=6
