@@ -1,4 +1,4 @@
-# Continuous Integration
+# Continuous Integration Workshop
 # Gym Membership Management System
 
 Backend API for managing gym membership plans, features, and cost calculations with FastAPI.
