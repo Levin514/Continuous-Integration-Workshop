@@ -1,0 +1,23 @@
+name: Validacion de Pull Requests
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  codigo-linting:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20.x'
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Analyzing the code with pylint
+        run: |
+          pylint $(git ls-files '*.py')
